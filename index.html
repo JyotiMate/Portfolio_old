@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+      
+
+
+    <title>Jyoti Mate Portfolio</title>
+<script>
+
+    /*Skills 3D animation*/
+
+    $(document).ready(function(){
+        var entries = [
+            { label: 'HTML'},
+            { label: 'CSS'},
+            { label: 'JAVASCRIPT'},
+            { label: 'WORDPRESS'},
+            { label: 'REACTJS'},
+            { label: 'TYPESCRIPT'},
+            { label: 'TYPED.JS'},
+            { label: 'SQL'},
+            { label: 'SEO'},
+            { label: 'GOOGLE ANALYTICS'},
+            { label: 'GRAPHIC DESIGN'},
+            { label: 'API'},
+            { label: 'JQUERY'},
+            { label: 'GMB'},
+            { label: 'GITHUB'},
+            { label: 'VANILLAJS'},
+            { label: 'ELEMENTOR'},
+            { label: 'BOOTSTRAP'},
+            { label: 'PYTHON'},
+        ];
+
+        var settings = {
+            entries : entries,
+            width: 350,
+            height: 400,
+            radius:'75%',
+            radiusMin: 75,
+            bgDraw: true,
+            bgColor: '#E8E9EB',
+            opacityOver: 1.00,
+            opacityOut: 0.05,
+            opacitySpeed: 6,
+            fov: 800,
+            speed:1,
+            fontFamily: 'Courior, Arial, sans-serif',
+            fontSize:'20',
+            fontColor: '#72BDDA',
+            fontWeight: 'bold',
+            fontStyle: 'normal',
+            fontStretch: 'normal',
+            fontToUpperCase: true
+        };
+       // $('#skills').svg3DTagCloud();
+
+        $( '#skills' ).svg3DTagCloud( settings );
+    } );
+ </script>
+   
+
+</head>
+
+<body>
+    <section class="header">
+    <nav>
+        <h1 id="name">JYOTI MATE</h1>
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#about" id="about">ABOUT</a></li>
+                <li><a href="#projects" id="project">PROJECTS</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()"></i>
+    </nav>
+
+
+    <div id="hero" class="hero">
+  
+          <div class="wave">
+              
+          </div>
+    </div>
+  
+    </section>
+    <h2 class="type"></h2>
+    
+    
+    <!---About Section-->
+   <section id="about" class="about">
+       <div class="aboutme">
+            <h1>ABOUT ME</h1>
+        </div>
+    <div class="row">
+        <div class="skills-col">
+            
+            <div id="skills">
+
+            </div>  
+        </div>
+        <div class="about-col">
+            
+           <p>"Hi, I am Jyoti Mate, currently working as Web Developer Intern at Digitalics Innovation US. I am also freelancing as a WordPress Developer with SEO.
+               In the past, I have volunteered as WordPress Developer for 48in48 organization. I have completed Web Development certification and still learning other technologies that catch my interest,if you're looking for a developer to add to your team,
+                I'd love to hear from you!"
+
+           </p>
+           <div class="connect">
+            <a href="https://www.linkedin.com/in/jyoti-mate/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/JyotiMate"><i class="fa fa-github"></i></a>
+           </div>
+
+
+        </div>
+        
+    </div>
+   </section>
+
+   <!--Project Section-->
+   <section id="projects" class="projects">
+    <h1>PROJECTS</h1>
+    <div class="row">
+        <div class="projects-col">
+            <h3>UNIVERSITY WEBSITE CLONE</h3>
+           <img src="images/UniversityWebsite.png" alt="University Website">
+           <a href="https://jyotimate.github.io/UniversityWebsite/">LIVE URL</a>
+         
+        </div>
+        <div class="projects-col">
+            <h3>FOOD RECIPES USING API</h3>
+           <img src="images/FoodRecipes.png" alt="Food Recipes">
+           <a href="https://jyotimate.github.io/FoodRecipesUsingAPI/">LIVE URL</a>
+        </div>
+       
+        <div class="projects-col">
+            <h3>MEDIA PLAYER</h3>
+            <img src="images/MusicApp.png" alt="Media Player">
+            <a href="https://jyotimate.github.io/MusicApp/">LIVE URL</a>
+            </div>
+
+        </div>
+        <div class="row">
+
+        <div class="projects-col">
+            <h3>DISNEY TYPING GAME FOR KIDS</h3>
+            <img src="images/TypingGame.png" alt="Typing Game For Kids">
+            <a href="https://jyotimate.github.io/TypingGame/">LIVE URL</a>
+        </div>
+        
+        <div class="projects-col">
+            <h3>TRAVEL BLOG</h3>
+            <img src="images/TravelBlog.png" alt="Travel Blog">
+            <a href="https://jyotimate.github.io/mytravelblog/">LIVE URL</a>
+        </div>
+        <div class="projects-col">
+            <h3>JQUERY TUTORIAL CLONE</h3>
+            <img src="images/JQueryTutorialClone.png" alt="JQuery Tutorial Clone">
+            <a href="https://jyotimate.github.io/JQueryTutorialClone/">LIVE URL</a>
+        </div>
+        
+    </div>
+   </section>
+
+   <section class="footer">
+    <h4>Jyoti Mate Portfolio</h4>
+   
+
+        
+</section>
+
+    <script type="text/javascript" src="typed.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+   
+
+</body>
+</html>
